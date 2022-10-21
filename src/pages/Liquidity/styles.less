@@ -1,0 +1,165 @@
+.maintitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 11px;
+  color: #929298;
+}
+.lighttitle {
+  color: #b5b5b6;
+}
+.secondarytitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: #929298;
+  .percentage {
+    margin: 0 30px;
+  }
+}
+.smalltitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #b5b5b6;
+}
+.pt {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.operationBottomWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.operationBottomWrapper{
+  .operationItem{
+    width: 100%;
+    padding: 20px 30px;
+    border-top: 0.75px solid #333333;
+    h3{
+      font-size: 20px;
+      margin-top: 0px;
+      display: flex;
+      &:hover{
+        color: #eb5c20;
+        transform: translate(10px,0);
+        transition-duration: 0.5s;
+      }
+      .span{
+        transform: translate(0,3px);
+      }
+    }
+  }
+}
+.trade {
+  padding-top: 25px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #b5b6b6;
+}
+.search {
+  margin-top: 12px;
+}
+.coinList {
+  width: 100%;
+  padding: 20px 50px;
+}
+.confirm {
+  margin: 24px auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #b5b6b6;
+  text-align: center;
+  p {
+    text-align: left;
+    margin-bottom: 14px;
+    &:nth-last-child(2) {
+      margin-bottom: 51px;
+    }
+  }
+}
+
+.main {
+  :global {
+    .ant-table-thead > tr,
+    .ant-table-tbody > tr {
+      // display: block;
+      text-align: right !important;
+    }
+  }
+}
+
+.main {
+  z-index: 0;
+  color: #b5b6b6;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+// .rowFlexContainer {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   gap: 1rem;
+// }
+
+@media (max-width: 1024px) {
+  .main, .main_notLoggedIn {
+    min-width: 370px;
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main_notLoggedIn {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+.rowFlexContainer {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // gap: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .rowFlexContainer {
+    // width: 30%;
+    min-width: 310px;
+    flex-wrap: nowrap;
+  }
+  .leftComponent {
+    border-right: 0.75px solid #333333;
+    order: 1;
+    flex: 2;
+  }
+  .rightComponent {
+    order: 2;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .colItem {
+    margin: 0 0.5rem;
+    width: 100%;
+  }
+  .leftComponent {
+    order: 2;
+  }
+  .rightComponent {
+    order: 1;
+  }
+}

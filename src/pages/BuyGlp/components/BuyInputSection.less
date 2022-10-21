@@ -1,0 +1,154 @@
+.buyInput {
+  margin: 0 5px;
+  padding: 10px;
+  border: 0.75px solid #232323;
+
+  .swapSectionTop {
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: .9rem;
+    margin-bottom: 8px
+  }
+
+  .swapSectionBottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .staticInput {
+    font-size: 1.5rem;
+  }
+
+  .swapInput {
+    color: #fff;
+    width: 0;
+    position: relative;
+    font-weight: 500;
+    outline: none;
+    flex: 1 1 auto;
+    height: unset;
+    border: 0;
+    border-radius: 0;
+    background-color: black;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: right;
+  }
+
+  .swapBalance {
+    color: #b5b5b6;
+  }
+}
+
+.alignRight {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.switchcoin {
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0.75px solid #232323;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  height: 2.4rem;
+  width: auto;
+  padding: 0 8px;
+  justify-content: space-between;
+  margin-right: 12px;
+  line-height: inherit;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}
+
+.coin {
+  width: fit-content;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dropDownMenu {
+  font-family: "Karla", sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+.optionItem {
+  background-color: black !important;
+  font-family: "Karla", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  height: 2.4rem;
+  display: flex;
+  &:hover {
+    background-color: #323232 !important;
+  }
+}
+
+:global {
+  .ant-select-dropdown-menu {
+    border: 0.75px solid #333333 !important;
+    border-radius: 5px !important;
+    margin-top: 2px;
+    padding: 4px 0;
+    width: 120px;
+    // padding-left: 10px;
+    overflow: auto;
+    list-style: none;
+    outline: none;
+  }
+}
+
+.tokenSelector {
+  :global {
+    .ant-select-arrow {
+      color: white;
+    }
+    .ant-select-selection {
+      background-color: transparent;
+      border: 0.75px solid #232323;
+      border-radius: 5px;
+      height: 2.4rem;
+      width: 120px;
+      padding: 2px 0px;
+      font-size: 15px;
+      font-weight: 200;
+      color: white;
+      overflow: inherit;
+      margin-right: 10px;
+      box-shadow: none;
+    }
+  }
+}
