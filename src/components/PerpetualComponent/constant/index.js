@@ -11,6 +11,7 @@ export const LONG = 'Long';
 export const SHORT = 'Short';
 export const SWAP = 'Swap';
 export const POOL = 'Pool';
+export const SLIPPAGE_BPS_KEY = 'Slippage bps';
 export const BSC_MAINNET = 56;
 export const POLYGON = 137;
 

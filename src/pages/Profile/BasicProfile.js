@@ -41,7 +41,7 @@ const progressColumns = [
   },
 ];
 
-@connect(({ profile, loading }) => ({
+connect(({ profile, loading })({
   profile,
   loading: loading.effects['profile/fetchBasic'],
 }))

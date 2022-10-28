@@ -180,7 +180,7 @@ const columns = [
   },
 ];
 
-@connect(({ profile, loading }) => ({
+connect(({ profile, loading })({
   profile,
   loading: loading.effects['profile/fetchAdvanced'],
 }))
@@ -209,8 +209,8 @@ class AdvancedProfile extends Component {
     this.setState({ operationkey: key });
   };
 
-  @Bind()
-  @Debounce(200)
+  // @Bind()
+  // @Debounce(200)
   setStepDirection() {
     const { stepDirection } = this.state;
     const w = getWindowWidth();

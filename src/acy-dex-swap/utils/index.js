@@ -1,4 +1,4 @@
-import { abi as IUniswapV2PairABI } from '@acyswap/v1-core/build/IUniswapV2Pair.json';
+import IUniswapV2PairABI from './IUniswapV2Pair.json';
 import { getAddress } from '@ethersproject/address';
 import { Contract } from '@ethersproject/contracts';
 import { AddressZero, MaxUint256 } from '@ethersproject/constants';
@@ -124,7 +124,7 @@ export function getTokenContract(tokenAddress, library, account) {
 }
 
 export function getPairContract(pairAddress, library, account) {
-  return getContract(pairAddress, IUniswapV2PairABI, library, account);
+  return getContract(pairAddress, IUniswapV2PairABI.abi, library, account);
 }
 
 import { getCreate2Address } from "@ethersproject/address";

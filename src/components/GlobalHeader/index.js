@@ -11,7 +11,7 @@ export default class GlobalHeader extends PureComponent {
     this.triggerResizeEvent.cancel();
   }
   /* eslint-disable*/
-  @Debounce(600)
+  // @Debounce(600)
   triggerResizeEvent() {
     // eslint-disable-line
     const event = document.createEvent('HTMLEvents');
